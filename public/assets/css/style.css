@@ -1,0 +1,488 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+body{
+
+    background-color: #f0edee;
+    position: relative;
+
+}
+
+/* HEADER SECTION */
+header{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 40px;
+    width: 100%;
+    padding: 20px 0px;  
+
+    position: absolute;
+    top: 0px;
+
+    z-index: 999;
+    
+    transition: all .25s ease-in-out;
+
+}
+
+header:hover{
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+
+}
+
+#logo{
+
+    width: 40px;
+    margin: 20px;
+
+    cursor: pointer;
+
+}
+
+header nav{
+
+    display: flex;
+    gap: 20px;
+
+    margin: 20px;
+
+}
+
+header nav a{
+
+    text-decoration: none;
+    color: #f0edee;
+    
+    font-family: "Lato", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+
+    transition: all .25s ease-in-out;
+
+}
+
+header nav a:hover{
+
+    color: #0893cf;
+
+}
+
+/* HERO SECTION */
+#hero{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/hero.jpeg);
+
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    position: relative;
+
+}
+
+#heroText{
+
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    width: 90vw;
+
+}
+
+#heroText h1{
+
+    font-family: "Lato", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+
+    margin-bottom: 20px;
+    
+}
+
+#heroText p{
+
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+
+    margin-bottom: 50px;
+
+}
+
+#heroText button{
+
+    height: 40px;
+    width: 150px;
+
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+
+    background-color: transparent;
+
+    border: 1px solid white;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: all .25s ease-in-out;
+
+}
+
+#heroText button:hover{
+
+    border: 1px solid #0893cf;
+    box-shadow:0px 0px 5px 1px #0893cf;
+
+}
+
+/* MAIN SECTION */
+#mainSectionTitle{
+
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+
+    margin: 20px;
+    text-align: center;
+
+    color: #0893cf;
+    
+}
+
+.places{
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    gap: 20px;
+
+}
+
+.thumbs{
+
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 5px 10px #888888;
+    border-radius: 2px;
+
+    transition: all .5s ease-in-out;
+
+}
+
+.places a{
+
+    overflow: hidden;
+
+}
+
+.scaleUp:hover{
+
+    transform: scale(1.1);
+
+}
+
+h3{
+
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+
+    width: 90%;
+
+}
+
+.places p{
+
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+
+    color: #9b9b9b;
+
+}
+
+.places button{
+
+    height: 40px;
+    width: 150px;
+
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+
+    background-color: transparent;
+
+    border: 1px solid black;
+
+    color: black;
+
+    cursor: pointer;
+
+    transition: all .25s ease-in-out;
+
+}
+
+.places button:hover{
+
+    border: 1px solid #0893cf;
+    box-shadow:0px 0px 5px 1px #0893cf;
+
+}
+
+/* CAROUSEL SECTION */
+#carouselSection{
+
+    background-color: #0a090c;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2% 5%;
+
+}
+
+#carouselTitle{
+
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    
+    text-align: center;
+
+    color: #f0edee;
+
+    margin: 10px 0px;
+
+}
+
+.imgCarousel{
+
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px #0893cf;
+
+}
+
+.carouselCountryNames{
+
+    margin-bottom: 10px;
+    color: #f0edee;
+
+}
+
+.carouselButtons{
+
+    height: 30px;
+    width: 100px;
+
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+
+    background-color: transparent;
+
+    border: 1px solid #f0edee;
+
+    color: #f0edee;
+
+    cursor: pointer;
+
+    margin-bottom: 20px;
+
+    transition: all .25s ease-in-out;
+
+}
+
+.carouselButtons:hover{
+
+    border: 1px solid #0893cf;
+    box-shadow:0px 0px 5px 1px #0893cf;
+
+}
+
+#sliderButtonsBundle{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.sliderButtons{
+
+    height: 30px;
+    width: 100px;
+
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+
+    border: 1px solid #f0edee;
+
+    background-color: #f0edee;
+    
+    color: #0a090c;
+
+    cursor: pointer;
+
+    margin-bottom: 10px;
+
+    transition: all .25s ease-in-out;
+
+}
+
+.sliderButtons:hover{
+
+    border: 1px solid #0893cf;
+    box-shadow:0px 0px 5px 1px #0893cf;
+    background-color: transparent;
+    color: #f0edee;
+
+}
+
+/* FOOTER SECTION */
+footer{
+
+    height: 50px;
+    border-top: 1px solid #0893cf;
+    box-shadow: 0px 1px 4px #888888;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer p{
+
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+
+    color: #0893cf;
+
+    margin-left: 5%;
+
+}
+
+footer a{
+
+    margin-right: 5%;
+    text-decoration: none;
+    
+}
+
+#backToTop{
+
+    height: 30px;
+    width: 120px;
+
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: transparent;
+    border: 1px solid #0a090c;
+
+    cursor: pointer;
+
+    transition: all .25s ease-in-out;
+
+}
+
+#backToTop:hover{
+
+    border: 1px solid #0893cf;
+    box-shadow:0px 0px 5px 1px #0893cf;
+
+}
+
+#backToTop p{
+    
+    color: #0a090c;
+
+}
+
+
+/* GRANIM CODE */
+#canvas-basic {
+
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 80px;   
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .4;
+
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 800px){
+
+    .mainSecFlex{
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .places{
+
+        margin: 0px 0px 30px;
+
+    }
+
+    #sliderButtonsBundle{
+
+        justify-content: center;
+
+    }
+    
+}
